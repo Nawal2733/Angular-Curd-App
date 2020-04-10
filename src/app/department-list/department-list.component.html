@@ -1,0 +1,26 @@
+<h2 class="text-center">Course Lists</h2>
+
+<div class="course-list">
+    <div>
+        <ul class="item">
+            <div>
+                <li (click)="onSelect(department)" *ngFor="let department of departments; index as i">
+                    <span>{{i+1}} </span> {{department.name}}
+                </li>
+            </div>
+            <div >
+                <div *ngFor="let d of departments" (click)="delete(d.id)" class="delete">X</div>
+            </div>
+        </ul>
+        <button (click)="back()">Back</button>
+    </div>
+    <div>
+        <h2>Add Course</h2><br>
+        <div class="form-group">
+            <label for="">Course Name</label><br>
+            <input #courseName type="text" placeholder="Course Name">
+            <p class="{{isDisplay}}">* display input field require </p>
+        </div><br>
+        <button (click)="save(courseName.value)">Save</button>
+    </div>
+</div>

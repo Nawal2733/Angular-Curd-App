@@ -1,0 +1,21 @@
+.course-detail{
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+}
+input{
+    width: 150px;
+    height: 20px;
+    padding: 5px;
+    font-weight: bold;
+    border: 1px solid black;
+}
+button{
+    background: rgb(112, 112, 112);
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}

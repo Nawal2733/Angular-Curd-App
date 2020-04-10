@@ -1,0 +1,19 @@
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
+.card{
+    cursor: pointer;
+    width: 200px;   
+    height: 150px;
+    background-color: rgb(248, 245, 245);
+    margin: 8px;
+    box-shadow: 0 0 4px rgb(177, 175, 175);
+}
+.card h3{
+    line-height: 150px;
+    text-align: center;
+}

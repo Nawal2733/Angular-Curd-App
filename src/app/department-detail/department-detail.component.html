@@ -1,0 +1,14 @@
+<h2 class="text-center">{{name}} Details !</h2><br>
+<div class="course-detail">
+    <div>
+        <h3>Id </h3><br>
+        <h3>Name </h3>
+        <br><br>
+        <button (click)="back()"> <- Back</button>
+    </div>
+    <div>
+        <h3>: {{department.id}}</h3><br>
+        <h3>: <input [(ngModel)]="name" (ngModelChange)="update()" type="text" value={{department.name}}></h3>
+    </div>
+</div>
+
